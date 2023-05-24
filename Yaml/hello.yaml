@@ -1,0 +1,43 @@
+"apple" : "I am a red fruit"  # key and value pari
+1: "this is Vibhor's roll number"
+---
+# lists
+- apple
+- mango
+- banana
+- orange
+---
+cities: # block
+ - new delhi
+ - mumbai
+ - gujrat
+---
+# for adding spaces b/w the lines
+bio: |
+hey my name is Vibhor.
+I am passionate about quantum computing.
+
+message: > 
+this all 
+will 
+be 
+in a 
+single line
+---
+number: 5433
+marks: 90.349
+booleanValue: No
+
+# for specifying the type
+zero: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum: !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValue: !!int +540_000 # 540,000
+# floating point 
+marks: !!float 56.89
+infinity: !!float .inf
+not a num: .nan
+...
