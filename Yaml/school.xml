@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8">
+<School name="GHPS" principal="bsdka">
+    <Students>
+        <Students>
+            <rno>44</rno>
+            <name>"Vibhor"</name>
+            <marks>33</marks>
+        </Students>
+    </Students>
+</School>

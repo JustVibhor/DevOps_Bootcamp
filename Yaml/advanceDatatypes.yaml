@@ -1,0 +1,98 @@
+student: !!seq
+ - marks
+ - name 
+ - roll_no
+
+ # you can write in this way also
+ students: [marks, name, roll_no]
+
+ # some of the keys of the seq will be empty
+ # sparse seq
+
+ sparse seq: 
+ - hey
+ - how
+ - 
+ - Null
+ - sup
+
+# nested sequence 
+- 
+ - mango
+ - apple
+ - orange
+-
+ - marks
+ - roll num
+ - date
+
+# means
+# [
+#   [
+#     "mango",
+#     "apple",
+#     "banana"
+#   ],
+#   [
+#     "marks",
+#     "roll num",
+#     "date"
+#   ]
+# ]
+
+# key: value pairs are called maps
+!!map
+
+# nested mapping: map within a map
+name: Vibhore
+role: 
+  age: 50
+  job: Quantum Computer Scientist 
+  
+# same as
+name: Vibhore
+role: {age: 50, job: QCS}
+
+
+# pairs: keys may have duplicate values
+# !!pairs
+
+pair example: !!pairs
+ - job: Student
+ - job: QCS
+
+# same as
+pair example: !!pairs [job: Student, ob: QCS]
+# this will be a hash table containing arrays
+
+# !!set will allow you to have unique values
+names: !!set
+ ? Vibhore
+ ? dj
+ ? garry
+
+# dictionary !!omap
+
+people: !!omap
+  - Vibhore:
+     name: Vibhore
+     age: 50
+     height: 220
+  - Dj:
+     name: Djjj
+     age: 51
+     height: 200
+
+# reusing some properties using anchors
+likings: &base 
+  fav fruit: mango
+  dislikes: apple
+
+person1: 
+  name: Vibhore
+  <<: *likes
+
+person2: 
+  name: Dj
+  <<: *likes 
+  dislikes: banana

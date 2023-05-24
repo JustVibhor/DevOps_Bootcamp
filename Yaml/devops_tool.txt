@@ -1,0 +1,7 @@
+How to validate your YAML file
+https://itnext.io/how-to-validate-kubernetes-yaml-files-9a17b9a30f08
+
+
+1. datree => eases checing yaml file check the videos
+2. monokle => makes easy to work with large scale files
+3. lens => creates yaml file for you

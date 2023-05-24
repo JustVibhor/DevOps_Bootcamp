@@ -40,4 +40,14 @@ commaValue: !!int +540_000 # 540,000
 marks: !!float 56.89
 infinity: !!float .inf
 not a num: .nan
+
+# null
+surname: !!null Null # or null, NULL, ~
+
+# date and time
+date: !!timestamp 2023-05-24
+time: 2023-05-24T12:50:43.1Z +5:30
+
+# exponential number
+exponents: 6.02E56
 ...
